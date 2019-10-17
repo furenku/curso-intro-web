@@ -1,0 +1,92 @@
+body {
+
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Nombre de etiqueta */
+div {
+    background-color: #fff;
+    color: #666;
+    padding: 1rem;
+    text-align: center; 
+    margin: 1rem;
+}
+
+/* Nombre clase */
+.roja {
+    background-color: #f00;
+    color: #fff;
+}
+
+/* Nombre de Identidad */
+#mi-super-caja {
+    background-color: #fa0;
+}
+
+
+/* Por atributo */
+div[texto="chico"] {
+    font-size: .5rem;
+}
+div[texto="gigante"] {
+    font-size: 2rem;
+}
+
+/* Por atributo sin valor */
+
+div[redondeada] {
+    border-radius: 3rem;
+}
+
+/* Usando pseudoselectores */
+
+div:first-child {
+    border: 1rem solid green;
+}
+div:last-child {
+    border: 1rem solid red;
+}
+div:nth-child(3) {
+    border: 1rem solid pink;
+}
+
+div:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+div {
+    transition: all 1s;
+}
+
+
+
+div > div {
+
+    padding: 1rem;
+    border: 1rem dotted blue;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #0af;
+
+}
+
+div > div > * {
+    width: 100%;
+}
+div > div > div {
+    width: calc( 100% / 3 );
+    display: flex;
+    font-size: 0.5rem;
+    margin: 0;
+    background-color: #a0f;
+
+}
