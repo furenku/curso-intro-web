@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+        html,body, ul, li {
+            margin: 0;
+        }
+
+        header {
+            width: 100vw;
+            background-color: #aaa;
+            height: 6rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 10rem;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .logo,
+        .mostrar {
+            flex-shrink: 1;
+        }
+
+        .menu {
+            flex-grow: 1;
+        }
+        .menu ul {
+            display: flex;
+            height: 100%;
+            align-items: stretch;
+            justify-content: space-evenly;
+        }
+        .menu li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 1rem;
+            font-size: .8rem;
+        }
+
+
+        .mostrar {
+            font-size: 3rem;
+        }
+
+
+
+
+
+        /* Movil Primero */
+        .menu {
+            display: none;
+        }
+
+        @media screen and (min-width: 768px) {
+            .mostrar {
+                display: none;
+            }
+            .menu {
+                display: flex;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <header>
+
+        <img src="http://fakeimg.pl/300x100" alt="" class="logo">
+
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        Menú 1
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Menú 2
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Menú 3
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Menú 4
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Menú 5
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="mostrar">
+            <i class="fa fa-bars"></i>
+        </button>
+    </header>
+    
+</body>
+</html>
