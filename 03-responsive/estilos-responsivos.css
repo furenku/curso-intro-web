@@ -1,0 +1,42 @@
+div {
+    background-color: #ccc;
+    padding: 2rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+
+#cajas-responsivas {
+    background-color: purple;
+}
+
+@media screen and (min-width: 568px) {
+    
+    #cajas-responsivas {
+        background-color: yellow;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+}
+@media screen and (min-width: 768px) {
+    
+    #cajas-responsivas {
+        background-color: greenyellow;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    
+    #cajas-responsivas {
+        background-color: cyan;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+}

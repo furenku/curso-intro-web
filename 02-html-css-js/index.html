@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- section#entrada -->
+    <section id="entrada">
+
+        <div>
+            <h6>
+                Escribe tu nombre
+            </h6>
+
+            <label>
+                <span>
+                    Nombre
+                </span>
+                <input type="text" name="nombre" placeholder="Escribe tu Nombre" onchange="escribirNombre()"/>
+            </label>
+
+            <label>
+                <span>
+                    Apellido
+                </span>
+                <input type="text" name="apellido" placeholder="Escribe tu Apellido" onchange="escribirApellido()"/>
+            </label>
+            
+            <label>
+                <span>
+                    Mensaje
+                </span>
+                <textarea type="text" name="mensaje" placeholder="Escribe tu Mensaje" onchange="escribirMensaje()">
+                </textarea>
+            </label>
+
+            <button onclick="enviarNuevoComentario()">
+                Enviar
+            </button>
+        </div>
+
+    </section>
+
+
+    <section id="mensajes">
+        <ul>
+            <!-- <li class="comentario modelo">
+                <h1 class="nombre">
+                    Simón Díaz
+                </h1>
+                <p class="mensaje">
+                    Culpa aute adipisicing ex adipisicing consequat laboris nostrud irure eu nulla non ad consectetur non.
+                </p>
+            </li> -->
+        </ul>
+    </section>
+
+
+    <script src="interaccion.js"></script>
+    
+</body>
+</html>

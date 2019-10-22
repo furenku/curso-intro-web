@@ -1,0 +1,12 @@
+
+
+@media screen and (min-width: 568px) {
+    
+    #cajas-responsivas {
+        background-color: yellow;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+}
