@@ -20,25 +20,32 @@
                 <span>
                     Nombre
                 </span>
-                <input type="text" name="nombre" placeholder="Escribe tu Nombre" onchange="escribirNombre()"/>
+                <input
+                class="input-nombre"
+                type="text" name="nombre" placeholder="Escribe tu Nombre" onchange="escribirNombre()"/>
             </label>
 
             <label>
                 <span>
                     Apellido
                 </span>
-                <input type="text" name="apellido" placeholder="Escribe tu Apellido" onchange="escribirApellido()"/>
+                <input type="text" name="apellido" 
+                class="input-apellido"
+                placeholder="Escribe tu Apellido" onchange="escribirApellido()"/>
+                
             </label>
             
             <label>
                 <span>
                     Mensaje
                 </span>
-                <textarea type="text" name="mensaje" placeholder="Escribe tu Mensaje" onchange="escribirMensaje()">
+                <textarea type="text" name="mensaje" 
+                class="input-mensaje"
+                placeholder="Escribe tu Mensaje" onchange="escribirMensaje()">
                 </textarea>
             </label>
 
-            <button onclick="enviarNuevoComentario()">
+            <button onclick="enviar()">
                 Enviar
             </button>
         </div>
@@ -48,14 +55,14 @@
 
     <section id="mensajes">
         <ul>
-            <!-- <li class="comentario modelo">
+            <li class="comentario modelo">
                 <h1 class="nombre">
-                    Simón Díaz
+                    ...
                 </h1>
                 <p class="mensaje">
-                    Culpa aute adipisicing ex adipisicing consequat laboris nostrud irure eu nulla non ad consectetur non.
+                    ...
                 </p>
-            </li> -->
+            </li>
         </ul>
     </section>
 
